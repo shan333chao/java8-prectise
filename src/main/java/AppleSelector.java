@@ -60,6 +60,7 @@ public class AppleSelector {
         colors.stream().forEach((a)->System.out.print(String.valueOf(a)) );
 
         System.out.println(greenApples.stream().skip(2).collect(Collectors.toList()).toString());
+        list.stream().filter(p->p.getWeight()>3).findFirst().orElse(greenApples.get(0));
 
    //     Thread.currentThread().join();
     }
